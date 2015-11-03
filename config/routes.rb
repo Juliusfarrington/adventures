@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
   resources :tasks
   resources :states
-  root 'welcome#index'
+  root 'help#index'
 
-  get 'homepage' => 'welcome#index'
+  get 'homepage' => 'help#index'
 
-  get 'aboutus' => 'welcome#about'
+  get 'aboutus' => 'help#about'
 
-  # The priority is based upon order of creation: first created -> highest priority.
+   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
